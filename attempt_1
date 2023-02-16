@@ -1,6 +1,8 @@
-Button button = new Button (this);
-button.setText("Tennis");
-button.setBackgroundResource("https://www.google.com/search?q=tenis+image&oq=tenis+image&aqs=chrome..69i57.5136j0j7&sourceid=chrome&ie=UTF-8#imgrc=dJJWKLYis9kmQM");
+Button button = new Button(this);
+button.setText("text");
+ImageView buttonImage = new ImageView(this);
+buttonImage.setImageURI(Uri.parse("https://upload.wikimedia.org/wikipedia/commons/d/d8/Example.jpg"));
+button.setCompoundDrawablesWithIntrinsicBounds(null, null, buttonImage, null);
 button.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
@@ -8,4 +10,3 @@ button.setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
-layout.addView(button);
