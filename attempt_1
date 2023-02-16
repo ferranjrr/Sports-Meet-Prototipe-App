@@ -1,0 +1,11 @@
+Button button = new Button (this);
+button.setText("Text");
+button.setBackgroundResource("http://image.url");
+button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent = new Intent(this, NewScreen.class);
+        startActivity(intent);
+    }
+});
+layout.addView(button);
