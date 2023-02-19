@@ -22,6 +22,6 @@ public class Sport extends Activity {
         String str = intent.getStringExtra("SportName");
 
         // display the string into textView
-        SportNameLabel.setText(str);
+        SportNameLabel.setText(" " + str);
     }
 }

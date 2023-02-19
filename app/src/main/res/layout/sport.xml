@@ -7,6 +7,30 @@
     tools:context=".Sport">
 
     <TextView
+        android:id="@+id/Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="   Request people to play together!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/SportName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="156dp" />
+
+    <TextView
+        android:id="@+id/Availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Availability:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/Information"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="320dp" />
+
+    <TextView
         android:id="@+id/SportName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
@@ -19,6 +43,7 @@
         tools:layout_editor_absoluteY="55dp" />
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="100dp"
@@ -268,6 +293,13 @@
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
