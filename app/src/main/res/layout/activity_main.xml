@@ -16,13 +16,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598" />
+        app:layout_constraintVertical_bias="0.615" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="116dp"
         android:text="Press me!"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -34,15 +34,15 @@
         android:layout_width="409dp"
         android:layout_height="117dp"
         android:text="TENNIS"
+        app:layout_constraintBottom_toTopOf="@+id/Gaming"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="64dp" />
+        tools:layout_editor_absoluteX="1dp" />
 
     <Button
         android:id="@+id/Gaming"
         android:layout_width="409dp"
         android:layout_height="118dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="124dp"
         android:text="Gaming"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         tools:ignore="MissingConstraints"
@@ -69,5 +69,14 @@
         app:barrierDirection="left"
         app:constraint_referenced_ids="Gaming"
         tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/Golf"
+        android:layout_width="409dp"
+        android:layout_height="114dp"
+        android:text="Golf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Gaming" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
