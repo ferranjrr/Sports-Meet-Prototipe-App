@@ -18,9 +18,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //setting the variables to the Layout file
-        OurText = findViewById(R.id.textView);
-        TheButton = findViewById(R.id.button);
-
         Button TennisButton = findViewById(R.id.Tennis);
         Button GamingButton = findViewById(R.id.Gaming);
         Button Golf = findViewById(R.id.Golf);
@@ -49,16 +46,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, Sport.class);
                 intent.putExtra("SportName", "Golf");
                 startActivity(intent);
-            }
-        });
-
-        //Setting the OnClick Listener
-        TheButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                // What we want to display when button is clicked
-                OurText.setText("The Button was Clicked!");
             }
         });
     }
