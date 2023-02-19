@@ -34,13 +34,19 @@ public class Sport extends Activity {
             @Override
             public void onClick(View v) {
                 Context context = getApplicationContext();
-                CharSequence text = "Request sent!";
+                CharSequence text;
+                if (Request.getText() == "Amend Request") {
+                    text = "Request amended!";
+                    Request.setText("REQUEST");
+                }
+                else {
+                    text = "Request sent!";
+                    Request.setText("Amend Request");
+                }
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(context, text, duration);
                 toast.show();
-
-                Request.setText("Amend Request");
             }
         });
     }
