@@ -22,11 +22,33 @@ public class MainActivity extends AppCompatActivity {
         TheButton = findViewById(R.id.button);
 
         Button TennisButton = findViewById(R.id.Tennis);
+        Button GamingButton = findViewById(R.id.Gaming);
+        Button Golf = findViewById(R.id.Golf);
 
         TennisButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Sport.class));
+                Intent intent = new Intent(MainActivity.this, Sport.class);
+                intent.putExtra("SportName", "Tennis");
+                startActivity(intent);
+            }
+        });
+
+        GamingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Sport.class);
+                intent.putExtra("SportName", "Gaming");
+                startActivity(intent);
+            }
+        });
+
+        Golf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Sport.class);
+                intent.putExtra("SportName", "Golf");
+                startActivity(intent);
             }
         });
 

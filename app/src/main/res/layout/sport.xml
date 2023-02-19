@@ -7,7 +7,7 @@
     tools:context=".Sport">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/SportName"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:background="#8BC34A"
@@ -16,4 +16,5 @@
         android:textSize="34sp"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="55dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
